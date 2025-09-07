@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My App - Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'SF Pro Display', 'San Francisco', 'Segoe UI', 'Roboto', Arial, sans-serif;
+            margin: 0;
+            background: #f5f5f7;
+            color: #1d1d1f;
+        }
+        header {
+            background: #fff;
+            color: #1d1d1f;
+            padding: 3rem 1rem 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+        }
+        h1 {
+            margin: 0 0 0.5rem 0;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+        .desc {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            color: #86868b;
+        }
+        .cta {
+            margin: 2rem 0;
+        }
+        .cta a {
+            display: inline-block;
+            margin: 0 1rem;
+            padding: 0.8rem 2.2rem;
+            background: #0071e3;
+            color: #fff;
+            border-radius: 28px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            transition: background 0.2s, color 0.2s;
+        }
+        .cta a:hover {
+            background: #005bb5;
+            color: #fff;
+        }
+        section {
+            max-width: 700px;
+            margin: 2.5rem auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+            padding: 2.5rem 2rem;
+        }
+        .support {
+            margin-top: 2.5rem;
+            text-align: center;
+        }
+        .support-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.2rem;
+        }
+        .support-link {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            background: #f5f5f7;
+            border-radius: 12px;
+            padding: 0.7rem 1.3rem;
+            color: #0071e3;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: background 0.2s;
+        }
+        .support-link:hover {
+            background: #e5e5ea;
+            color: #005bb5;
+        }
+        .support-link svg {
+            width: 1.2em;
+            height: 1.2em;
+            vertical-align: middle;
+        }
+        footer {
+            text-align: center;
+            color: #86868b;
+            font-size: 0.98rem;
+            margin: 2.5rem 0 1.2rem 0;
+        }
+    </style>
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            margin: 2.5rem 0 1.5rem 0;
+        }
+        .gallery-item {
+            background: #f5f5f7;
+            border-radius: 18px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            padding: 1.2rem 1.2rem 0.7rem 1.2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 320px;
+        }
+        .gallery-item img {
+            width: 100%;
+            max-width: 280px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            margin-bottom: 0.7rem;
+        }
+        .gallery-caption {
+            color: #86868b;
+            font-size: 0.98rem;
+            text-align: center;
+        }
+        @media (max-width: 700px) {
+            .gallery {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            .gallery-item {
+                max-width: 95vw;
+            }
+            .gallery-item img {
+                max-width: 90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My App</h1>
+        <div class="desc">A short description of your amazing app goes here. Highlight the main value proposition!</div>
+        <div class="cta">
+            <a href="#" target="_blank">App Store</a>
+            <a href="#" target="_blank">Google Play</a>
+        </div>
+    </header>
+    <section>
+        <h2>About My App</h2>
+        <p>
+            This is a placeholder for your app's marketing content. Describe features, benefits, and what makes your app unique. Add screenshots, testimonials, or a demo video for more impact.
+        </p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assets/Simulator Screenshot - iPad Pro 13-inch (M4) - 2025-09-06 at 08.24.34-portrait.png" alt="App Screenshot 1">
+                <div class="gallery-caption">Main Dashboard</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Simulator Screenshot - iPad Pro 13-inch (M4) - 2025-09-06 at 08.24.54-portrait.png" alt="App Screenshot 2">
+                <div class="gallery-caption">Feature View</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Simulator Screenshot - iPad Pro 13-inch (M4) - 2025-09-06 at 08.28.22-portrait.png" alt="App Screenshot 3">
+                <div class="gallery-caption">Settings</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Simulator Screenshot - iPad Pro 13-inch (M4) - 2025-09-06 at 08.31.07-portrait.png" alt="App Screenshot 4">
+                <div class="gallery-caption">Accessibility</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Simulator Screenshot - iPad Pro 13-inch (M4) - 2025-09-06 at 08.31.28-portrait.png" alt="App Screenshot 5">
+                <div class="gallery-caption">Profile</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Simulator Screenshot - iPad Pro 13-inch (M4) - 2025-09-06 at 08.31.42-portrait.png" alt="App Screenshot 6">
+                <div class="gallery-caption">More Features</div>
+            </div>
+        </div>
+
+        <div class="support">
+            <h3>Contact & Social</h3>
+            <div class="support-links">
+                <a class="support-link" href="mailto:kristhian.deoliveira@gmail.com" target="_blank" title="Email">
+                    <svg fill="none" viewBox="0 0 24 24"><path fill="#0071e3" d="M2 6.75A2.75 2.75 0 0 1 4.75 4h14.5A2.75 2.75 0 0 1 22 6.75v10.5A2.75 2.75 0 0 1 19.25 20H4.75A2.75 2.75 0 0 1 2 17.25V6.75Zm2.75-1.25a1.25 1.25 0 0 0-1.25 1.25v.34l9.25 6.16 9.25-6.16v-.34a1.25 1.25 0 0 0-1.25-1.25H4.75Zm16.5 3.01-8.6 5.72a.75.75 0 0 1-.82 0l-8.6-5.72V17.25c0 .69.56 1.25 1.25 1.25h14.5c.69 0 1.25-.56 1.25-1.25V8.51ZM4.75 5.5h14.5-14.5Z"/></svg>
+                    Email
+                </a>
+                <a class="support-link" href="https://x.com/blind_power_yt" target="_blank" title="Twitter/X">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M17.53 3.5h3.07l-6.72 7.68 7.92 9.32h-6.23l-4.88-5.74-5.58 5.74H2.03l7.18-7.38L1.5 3.5h6.38l4.37 5.14 5.28-5.14Zm-1.08 14.7h1.7L7.65 5.47H5.82l10.63 12.73Z" fill="#0071e3"/></svg>
+                    Twitter/X
+                </a>
+                <a class="support-link" href="https://www.youtube.com/@TechnologyUtopia" target="_blank" title="YouTube">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M21.8 8.001a2.75 2.75 0 0 0-1.94-1.94C18.1 5.5 12 5.5 12 5.5s-6.1 0-7.86.56A2.75 2.75 0 0 0 2.2 8.001 28.6 28.6 0 0 0 1.5 12a28.6 28.6 0 0 0 .7 3.999 2.75 2.75 0 0 0 1.94 1.94C5.9 18.5 12 18.5 12 18.5s6.1 0 7.86-.56a2.75 2.75 0 0 0 1.94-1.94A28.6 28.6 0 0 0 22.5 12a28.6 28.6 0 0 0-.7-3.999ZM10.5 15.5v-7l6 3.5-6 3.5Z" fill="#ff0000"/></svg>
+                    YouTube
+                </a>
+                <a class="support-link" href="tel:+17862715809" title="Phone">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1C6.48 21 3 13.52 3 8.5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.46.57 3.58a1 1 0 0 1-.24 1.01l-2.2 2.2Z" fill="#0071e3"/></svg>
+                    +1 (786) 271-5809
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 My App. All rights reserved.
+    </footer>
+</body>
+</html>
